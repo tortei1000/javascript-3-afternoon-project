@@ -96,10 +96,10 @@ function double(obj){
 function secrets(obj){
   let newStr = ''
   for(let value in obj){
-    if(obj[value] === 'sh'){
+    if(value.startsWith('sh')){
       newStr += obj[value]
     }
-  }
+  } return newStr
 }
 
 
