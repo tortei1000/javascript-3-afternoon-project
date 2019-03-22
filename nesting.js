@@ -119,8 +119,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name
 
 
 
@@ -160,7 +160,7 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+
 
 
 
@@ -179,6 +179,6 @@ var numsArr = [[1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+
 
 

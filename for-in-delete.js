@@ -75,7 +75,11 @@ function greaterThan10( obj ){
   Return the updated object.
 */
 
-//Code Here
+function double(obj){
+  for(let value in obj){
+    obj[value] = obj[value] * 2
+  } return obj
+}
 
 
 
@@ -89,8 +93,14 @@ function greaterThan10( obj ){
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-//Code Here
-
+function secrets(obj){
+  let newStr = ''
+  for(let value in obj){
+    if(obj[value] === 'sh'){
+      newStr += obj[value]
+    }
+  }
+}
 
 
 /* 

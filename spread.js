@@ -19,8 +19,7 @@ let product = {
 
 let productCopy = {...product}
 
-product.id = 100
-console.log(productCopy)
+
 
 
 
@@ -30,7 +29,7 @@ console.log(productCopy)
 
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-let colorsCopy = [...color]
+let colorsCopy = [...colors]
 
 
 
