@@ -52,9 +52,18 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
-
-//Code Here
-
+let obj = {
+  utah: 1,
+  california: 22,
+  texas: 2,
+  arizona: 3
+}
+function totalPopulation({utah, california, texas, arizona}){
+  console.log(utah, california)
+  let totPop = utah + california +texas + arizona
+  return totPop
+}
+totalPopulation(obj)
 
 
 ////////// PROBLEM 4 //////////
@@ -67,8 +76,18 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+foods = {
+  carb:'good',
+  fat:'bad',
+  protein:'ugly'
+}
 
+function ingredients({carb, fat, protein}){
+  let words = [carb, fat, protein]
+  console.log(words)
+  return words
+}
+ingredients(foods)
 
 
 ////////// PROBLEM 5 //////////
@@ -85,7 +104,19 @@ function greeting( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+let nums = {}
+function largeNumbers({first, second, third}={nums})
+  {
+    nums.first = 1
+    nums.second = 3
+    nums.third = 6
+    console.log(nums, nums.first, nums.second, nums.third)
+    var arr = Object.keys( nums ).map(function ( key ) { return nums[key]; });
+    var min = Math.min.apply( null, arr );
+    
+    return min
+  }
+    
 
 
 
@@ -97,6 +128,18 @@ function greeting( obj ) {
   Find the longest array and return that array.
 */
 
-//Code Here
+let nums = {}
+function numberGroups({a, b, c} = {nums}){
+nums.a = [1,2],
+nums.b = [1,2,3,4,5],
+nums.c = [1,2,3]
+if(nums.a.length > nums.b.length && nums.a.length > nums.c.length){
+  return nums.a
+  } else if(nums.b.length > nums.a.length && nums.b.length > nums.c.length){
+   return nums.b
+  } else return nums.c
+    
+}
+
 
 
