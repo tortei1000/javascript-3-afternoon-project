@@ -44,7 +44,7 @@ function addNums(num1, num2, num3) {
   return num1 + num2 + num3;
 }
 
-addNums(...numbers)
+let result = addNums(...numbers)
 
 
 ////////// PROBLEM 4 //////////
@@ -54,4 +54,5 @@ addNums(...numbers)
 let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
-// code here
+let combinedArrays = [...arr1, ...arr2]
+console.log(combinedArrays)
