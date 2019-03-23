@@ -159,8 +159,13 @@ var myCar = {
     2. Loop over the accidents array.
     3. Change atFaultForAccident from true to false.
 */
+let recordCleaner = myCar.accidents.map(function(atFault){
+   
+  return atFault === false ? true : false
 
+})
 
+recordCleaner
 
 
 
@@ -178,6 +183,23 @@ var numsArr = [[1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
         If the number is even, replace it with 'even'.
     4. Return the modified numsArr.
 */
+
+function looper (arr){
+  for(let i = 0; i < arr.length; i++){
+    for(let j = 0; j < arr[i].length; j++){
+      //console.log(arr[i][j])
+      if(arr[i][j] % 2 !== 0){
+        arr[i].splice(j, 1, 'odd')
+        console.log(arr[i][j])
+      }
+      else {
+        arr[i].splice(j, 1, 'even')
+      }
+    }
+  }
+}
+looper(numsArr)
+numsArr
 
 
 
